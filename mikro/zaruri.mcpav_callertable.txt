@@ -1,0 +1,35 @@
+main
+	display
+	LCD0
+		Lcd_Init
+			Delay_5500us
+			Delay_1us
+		Lcd_Cmd
+			Delay_1us
+			Delay_5500us
+			Delay_50us
+		Lcd_Out
+			Lcd_Cmd
+			Lcd_Chr_CP
+				Lcd_Cmd
+	arunc
+		rand
+			srand
+			Mul_32x32
+		display
+		init_timer
+		init_adc
+		Div_16x16_S
+	LCD1
+		Lcd_Cmd
+		Lcd_Out
+		Div_16x16_S
+	LCD2
+		Lcd_Cmd
+		Lcd_Out
+	Lcd_Cmd
+	Lcd_Out
+	__CC2DW
+Timer0_OC_ISR
+	readADC
+	Div_16x16_S
